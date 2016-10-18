@@ -18,13 +18,14 @@ Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 Plugin 'ervandew/supertab'
 Plugin 'easymotion/vim-easymotion'
+Plugin 'tomasr/molokai'
 
 call vundle#end()
 
 
 "use molokai theme for terminal
-set t_Co=256
 colorscheme molokai
+set t_Co=256
 "use airline theme
 let g:airline_theme='molokai'
 
