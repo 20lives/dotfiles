@@ -19,9 +19,9 @@ Plugin 'honza/vim-snippets'
 Plugin 'ervandew/supertab'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'tomasr/molokai'
+Plugin 'chrisbra/SudoEdit.vim'
 
 call vundle#end()
-
 
 "use molokai theme for terminal
 colorscheme molokai
@@ -41,7 +41,7 @@ set laststatus=2
 let g:airline#extensions#tabline#enabled = 1
 
 "show lines number
-	set relativenumber
+set relativenumber
 
 "current line highlighed
 set cul
@@ -103,5 +103,20 @@ let g:ctrlp_show_hidden = 1
 "line after 80 chars
 set colorcolumn=80
 
+"sudo write commands
+command -bang -nargs=? W SudoWrite<bang> <args>
+command -bang -nargs=? E SudoRead<bang> <args>
+command -bang Q qall<bang>
 
+imap <f2> <c-o>:call ToggleHebrew()<cr>
+map <f2> :call ToggleHebrew()<cr>
 
+func! ToggleHebrew()
+	if &rl
+		set norl
+		set keymap=
+	else
+		set rl
+		set keymap=hebrew_dvorak
+	end
+endfunc
