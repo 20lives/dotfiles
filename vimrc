@@ -1,27 +1,26 @@
 "no vi compabilty
 set nocompatible
 
-"Vundle Plugins
-filetype off
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
 
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'scrooloose/syntastic'
-Plugin 'kien/ctrlp.vim'
-Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-surround'
-Plugin 'SirVer/ultisnips'
-Plugin 'honza/vim-snippets'
-Plugin 'ervandew/supertab'
-Plugin 'easymotion/vim-easymotion'
-Plugin 'tomasr/molokai'
-Plugin 'chrisbra/SudoEdit.vim'
+"vim-plug
+call plug#begin('~/.vim/plugged')
 
-call vundle#end()
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'Valloric/YouCompleteMe'
+Plug 'scrooloose/syntastic'
+Plug 'kien/ctrlp.vim'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-surround'
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
+Plug 'ervandew/supertab'
+Plug 'easymotion/vim-easymotion'
+Plug 'tomasr/molokai'
+Plug 'chrisbra/SudoEdit.vim'
+
+" Initialize plugin system
+call plug#end()
 
 "use molokai theme for terminal
 colorscheme molokai
