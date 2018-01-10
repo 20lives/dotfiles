@@ -18,6 +18,7 @@ Plug 'ervandew/supertab'
 Plug 'easymotion/vim-easymotion'
 Plug 'tomasr/molokai'
 Plug 'chrisbra/SudoEdit.vim'
+Plug 'posva/vim-vue'
 
 " Initialize plugin system
 call plug#end()
