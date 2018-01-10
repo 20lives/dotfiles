@@ -51,7 +51,7 @@ set fileencoding=utf-8
 set encoding=utf-8
 
 "set tabs width
-set ts=2 sts=2 sw=2 
+set tabstop=2 shiftwidth=2 expandtab
 
 "search case insesnitive
 set ignorecase
