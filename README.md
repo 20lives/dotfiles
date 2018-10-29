@@ -25,3 +25,16 @@
    ```
 
 2. Restart i3 to load new configs with ALT+SHIFT+R keybinding.
+
+## oh-my-zsh
+1. Run the following command:
+   ```
+   sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+   ```
+
+2. Clone this repository and create a symbolic link to the zshrc file
+   ```
+   git clone https://github.com/20lives/dotfiles.git
+   cd dotfiles
+   ln -s zshrc ~/.zshrc
+   ```
