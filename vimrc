@@ -35,6 +35,11 @@ syntax on
 filetype indent on
 filetype plugin on
 
+" highlight current line
+set cursorline
+" highlight current column
+set cursorcolumn
+
 "show airline
 set laststatus=2
 
