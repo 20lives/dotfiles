@@ -15,3 +15,13 @@
    ```
 
 3. Run vim and `:PlugInstall` to install all plugins.
+
+## i3
+1. Clone this repository and create a symbolic link to the vimrc file
+   ```
+   git clone https://github.com/20lives/dotfiles.git
+   cd dotfiles
+   ln -sf i3config ~/.config/i3/config
+   ```
+
+2. Restart i3 to load new configs with ALT+SHIFT+R keybinding.
