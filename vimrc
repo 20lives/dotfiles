@@ -47,7 +47,7 @@ set laststatus=2
 let g:airline#extensions#tabline#enabled = 1
 
 "show lines number
-set relativenumber
+set number relativenumber
 
 "current line highlighed
 set cul
