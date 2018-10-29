@@ -19,6 +19,7 @@ Plug 'easymotion/vim-easymotion'
 Plug 'tomasr/molokai'
 Plug 'chrisbra/SudoEdit.vim'
 Plug 'posva/vim-vue'
+Plug 'w0rp/ale'
 
 " Initialize plugin system
 call plug#end()
